@@ -200,7 +200,7 @@ a {
 }
 
 body {
-  background-image: url("/images/bg.png");
+  background-image: url("../images/bg.png");
 }
 
 .wrap {
@@ -214,7 +214,6 @@ body {
 
 .topbar {
   background-color: #FFF;
-  margin: 0 auto;
 }
 .topbar .topgreen {
   background-color: #9cb929;
@@ -252,6 +251,60 @@ body {
 .topbar .topbar-right li span {
   color: #7b7b7b;
   margin-right: 5px;
+}
+
+.header {
+  overflow: auto;
+}
+.header .logo {
+  padding: 40px 0px 10px 100px;
+  float: left;
+}
+.header .logo a {
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 314px;
+  height: 55px;
+  text-indent: -99999px;
+}
+.header .header-right {
+  float: right;
+  margin-top: 45px;
+  margin-right: 60px;
+}
+.header .header-right .search-input {
+  width: 202px;
+  height: 38px;
+  padding-left: 10px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+.header .header-right .search-button {
+  width: 40px;
+  height: 40px;
+  padding: 13px;
+  margin-left: -6px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 0px;
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+.header .header-right .search-button:hover {
+  opacity: 0.4;
+}
+.header .header-right ul {
+  float: right;
+}
+.header .header-right ul li {
+  display: inline;
+}
+.header .header-right ul li a:hover {
+  opacity: 0.4;
 }
 
 /*# sourceMappingURL=all.css.map */

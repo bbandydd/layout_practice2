@@ -1,8 +1,8 @@
 body
-    background-image: url("/images/bg.png")
+    background-image: url("../images/bg.png")
 
 .wrap
-    width: 1180px
+    width: $wrap-width
     margin: 0 auto
 
 .highlight
@@ -10,7 +10,6 @@ body
 
 .topbar
     background-color: #FFF
-    margin: 0 auto
     .topgreen
         background-color: #9cb929
         width: 100%
@@ -40,3 +39,46 @@ body
                 color: $text-color
                 margin-right: 5px
 
+.header
+    overflow: auto
+    .logo
+        padding: 40px 0px 10px 100px
+        float: left
+        a
+            background-image: url("../images/logo.png")
+            background-repeat: no-repeat
+            display: block
+            width: $logo-width
+            height: $logo-height
+            text-indent: -99999px
+    .header-right
+        float: right
+        margin-top: 45px
+        margin-right: 60px
+        .search-input
+            width: 202px
+            height: 38px
+            padding-left: 10px
+            -webkit-border-radius: 5px 0px 0px 5px
+            -moz-border-radius: 5px 0px 0px 5px
+            border-radius: 5px 0px 0px 5px
+        .search-button
+            width: 40px
+            height: 40px
+            padding: 13px
+            margin-left: -6px
+            -webkit-border-radius: 5px
+            -moz-border-radius: 5px
+            border-radius: 5px
+            border: 0px
+            background-image: url("../images/search.png")  
+            background-repeat: no-repeat
+            margin-right: 5px
+            &:hover
+                opacity: 0.4
+        ul
+            float: right
+            li
+                display: inline
+                a:hover
+                    opacity: 0.4
