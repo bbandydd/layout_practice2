@@ -199,6 +199,14 @@ a {
   color: black;
 }
 
+.menu button {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #fff;
+  background-image: linear-gradient(to top, #7fa51e 40%, #dbe350 100%);
+}
+
 body {
   background-image: url("../images/bg.png");
 }
@@ -255,6 +263,7 @@ body {
 
 .header {
   overflow: auto;
+  margin-bottom: 35px;
 }
 .header .logo {
   padding: 40px 0px 10px 100px;
@@ -305,6 +314,38 @@ body {
 }
 .header .header-right ul li a:hover {
   opacity: 0.4;
+}
+
+.menu {
+  padding: 20px 0px;
+}
+.menu ul {
+  display: inline;
+  margin-right: 260px;
+}
+.menu ul li {
+  display: inline;
+  font-size: 18px;
+  margin-right: 35px;
+}
+.menu ul li a:hover {
+  color: #9cb929;
+}
+.menu button {
+  padding: 10px;
+}
+.menu button:hover {
+  opacity: 0.4;
+}
+.menu button span {
+  display: inline;
+  position: relative;
+  top: -5px;
+}
+
+.separator {
+  background-image: url("../images/separator.png");
+  height: 15px;
 }
 
 /*# sourceMappingURL=all.css.map */

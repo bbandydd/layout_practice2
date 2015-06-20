@@ -41,6 +41,7 @@ body
 
 .header
     overflow: auto
+    margin-bottom: 35px
     .logo
         padding: 40px 0px 10px 100px
         float: left
@@ -75,10 +76,37 @@ body
             background-repeat: no-repeat
             margin-right: 5px
             &:hover
-                opacity: 0.4
+                opacity: $hover-opacity
         ul
             float: right
             li
                 display: inline
                 a:hover
-                    opacity: 0.4
+                    opacity: $hover-opacity
+
+.menu
+    padding: 20px 0px
+    ul
+        display: inline
+        margin-right: 260px
+        li
+            display: inline
+            font-size: 18px
+            margin-right: 35px
+            a:hover
+                color: $highlight-color
+    button
+        padding: 10px
+        @extend %button-style
+        &:hover
+            opacity: $hover-opacity
+        span
+            display: inline
+            position: relative
+            top: -5px
+
+
+
+.separator
+    background-image: url("../images/separator.png")
+    height: 15px
