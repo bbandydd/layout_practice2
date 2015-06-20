@@ -199,12 +199,18 @@ a {
   color: black;
 }
 
-.menu button {
+.menu button, .slider .quote button {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   color: #fff;
   background-image: linear-gradient(to top, #7fa51e 40%, #dbe350 100%);
+}
+
+.slider {
+  -moz-box-shadow: 0 0 10px #777777;
+  -webkit-box-shadow: 0 0 10px #777777;
+  box-shadow: 0 0 10px #777777;
 }
 
 body {
@@ -231,7 +237,7 @@ body {
 .topbar .topbar-left {
   display: inline-block;
   padding: 10px 0px 10px 100px;
-  margin-right: 150px;
+  margin-right: 195px;
 }
 .topbar .topbar-left p {
   display: inline;
@@ -280,7 +286,6 @@ body {
 .header .header-right {
   float: right;
   margin-top: 45px;
-  margin-right: 60px;
 }
 .header .header-right .search-input {
   width: 202px;
@@ -320,10 +325,11 @@ body {
 
 .menu {
   padding: 20px 0px;
+  margin-bottom: 60px;
 }
 .menu ul {
   display: inline;
-  margin-right: 260px;
+  margin-right: 310px;
 }
 .menu ul li {
   display: inline;
@@ -334,6 +340,7 @@ body {
   color: #9cb929;
 }
 .menu button {
+  margin: 10px 0px;
   padding: 10px;
 }
 .menu button:hover {
@@ -344,10 +351,28 @@ body {
   position: relative;
   top: -5px;
 }
-
-.separator {
+.menu .separator {
   background-image: url("../images/separator.png");
   height: 15px;
+}
+
+.slider {
+  background-color: #FFF;
+}
+.slider .quote {
+  padding: 10px;
+}
+.slider .quote span {
+  font-size: 32px;
+  margin-right: 100px;
+  vertical-align: middle;
+}
+.slider .quote button {
+  width: 180px;
+  height: 50px;
+}
+.slider .quote button:hover {
+  opacity: 0.4;
 }
 
 /*# sourceMappingURL=all.css.map */

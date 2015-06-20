@@ -17,7 +17,7 @@ body
     .topbar-left
         display: inline-block
         padding: 10px 0px 10px 100px
-        margin-right: 150px
+        margin-right: 195px
         p
             display: inline
             color: $text-color
@@ -55,7 +55,6 @@ body
     .header-right
         float: right
         margin-top: 45px
-        margin-right: 60px
         .search-input
             width: 202px
             height: 38px
@@ -88,9 +87,10 @@ body
 
 .menu
     padding: 20px 0px
+    margin-bottom: 60px
     ul
         display: inline
-        margin-right: 260px
+        margin-right: 310px
         li
             display: inline
             font-size: 18px
@@ -98,6 +98,7 @@ body
             a:hover
                 color: $highlight-color
     button
+        margin: 10px 0px
         padding: 10px
         @extend %button-style
         &:hover
@@ -106,9 +107,22 @@ body
             display: inline
             position: relative
             top: -5px
+    .separator
+        background-image: url("../images/separator.png")
+        height: 15px
 
-
-
-.separator
-    background-image: url("../images/separator.png")
-    height: 15px
+.slider
+    background-color: #FFF
+    @extend %border-shadow
+    .quote
+        padding: 10px
+        span
+            font-size: 32px
+            margin-right: 100px
+            vertical-align: middle
+        button
+            width: 180px
+            height: 50px
+            @extend %button-style
+            &:hover
+                opacity: $hover-opacity 
