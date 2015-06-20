@@ -307,7 +307,9 @@ body {
   opacity: 0.4;
 }
 .header .header-right ul {
-  float: right;
+  display: inline-block;
+  position: relative;
+  top: 12px;
 }
 .header .header-right ul li {
   display: inline;
