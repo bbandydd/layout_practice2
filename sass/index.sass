@@ -8,12 +8,13 @@ body
 .highlight
     color: $highlight-color
 
+.green-bar
+    background-color: #9cb929
+    width: 100%
+    height: 2px
+
 .topbar
     background-color: #FFF
-    .topgreen
-        background-color: #9cb929
-        width: 100%
-        height: 2px
     .topbar-left
         display: inline-block
         padding: 10px 0px 10px 100px
@@ -266,7 +267,6 @@ body
                             opacity: $hover-opacity
 
 .sponsors
-    margin-bottom: 65px
     @extend %clearfix
     .title
         margin-bottom: 20px
@@ -290,3 +290,88 @@ body
             li
                 float: left
                 width: 230px
+                a:hover
+                    opacity: $hover-opacity
+
+.footer
+    padding: 45px
+    background-color: #FFF
+    @extend %clearfix
+    ul
+        li
+            float: left
+            width: 235px
+            margin-right: 35px
+            .list1
+                a
+                    display: inline-block
+                    margin-bottom: 45px
+                    &:hover
+                        opacity: $hover-opacity
+                h4
+                    font-size: 26px
+                    margin-bottom: 20px
+                ul
+                    li
+                        float: left
+                        width: 40px
+                        margin-right: 5px
+            .list2
+                h4
+                    font-size: 26px
+                    margin-bottom: 25px
+                ul
+                    li
+                        width: 266px
+                        height: 70px
+                        margin-bottom: 20px
+                        border: 1px solid #dddddd
+                        -webkit-border-radius: 15px
+                        -moz-border-radius: 15px
+                        border-radius: 15px
+                        img
+                            float: left
+                            margin-right: 10px
+                        h5
+                            font-size: 16px
+                            padding: 12px
+                        p
+                            font-size: 14px
+            .list3
+                padding-left: 30px
+                h4
+                    font-size: 26px
+                    margin-bottom: 25px
+                p
+                    margin-bottom: 8px
+                    font-size: 14px
+                .info1, .info2
+                    margin-bottom: 35px
+            .list4
+                h4
+                    font-size: 26px
+                    margin-bottom: 25px
+
+.bottombar
+    background-color: #000
+    @extend %clearfix
+    .bottombar-left
+        float: left
+        padding: 12px 0px 7px 45px
+        li
+            display: inline
+            a
+                color: $text-color
+                margin-right: 10px
+                font-size: 14px
+                &:hover
+                    color: $hover-color
+            span
+                color: $text-color
+                margin-right: 5px
+    .bottombar-right
+        float: right
+        p
+            color: $text-color
+            padding: 12px 50px 7px 0px
+            font-size: 14px
