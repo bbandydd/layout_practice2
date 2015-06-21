@@ -264,3 +264,29 @@ body
                         color: $highlight-color
                         &:hover
                             opacity: $hover-opacity
+
+.sponsors
+    margin-bottom: 65px
+    @extend %clearfix
+    .title
+        margin-bottom: 20px
+        h2
+            font-size: 24px
+            display: inline
+            margin-bottom: 20px
+        .separator
+            display: inline-block
+            text-indent: -9999px
+            width: 815px
+            background-image: url("../images/separator.png")
+        button
+            +btn(#7fa51e, #dbe350)
+            &:hover
+                opacity: $hover-opacity
+    .sponsor-list
+        margin-bottom: 62px
+        @extend %clearfix
+        ul
+            li
+                float: left
+                width: 230px

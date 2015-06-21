@@ -199,14 +199,14 @@ a {
   color: black;
 }
 
-.header, .recent-products, .recent-products .products ul li .price, .featured-products, .featured-products .products ul li .price {
+.header, .recent-products, .recent-products .products ul li .price, .featured-products, .featured-products .products ul li .price, .sponsors, .sponsors .sponsor-list {
   zoom: 1;
 }
-.header:before, .recent-products:before, .recent-products .products ul li .price:before, .featured-products:before, .featured-products .products ul li .price:before {
+.header:before, .recent-products:before, .recent-products .products ul li .price:before, .featured-products:before, .featured-products .products ul li .price:before, .sponsors:before, .sponsors .sponsor-list:before {
   content: "";
   display: table;
 }
-.header:after, .recent-products:after, .recent-products .products ul li .price:after, .featured-products:after, .featured-products .products ul li .price:after {
+.header:after, .recent-products:after, .recent-products .products ul li .price:after, .featured-products:after, .featured-products .products ul li .price:after, .sponsors:after, .sponsors .sponsor-list:after {
   content: "";
   display: table;
   clear: both;
@@ -589,6 +589,41 @@ body {
 }
 .featured-products .products ul li .view a:hover {
   opacity: 0.4;
+}
+
+.sponsors {
+  margin-bottom: 65px;
+}
+.sponsors .title {
+  margin-bottom: 20px;
+}
+.sponsors .title h2 {
+  font-size: 24px;
+  display: inline;
+  margin-bottom: 20px;
+}
+.sponsors .title .separator {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 815px;
+  background-image: url("../images/separator.png");
+}
+.sponsors .title button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-image: linear-gradient(to top, #7fa51e 40%, #dbe350 100%);
+}
+.sponsors .title button:hover {
+  opacity: 0.4;
+}
+.sponsors .sponsor-list {
+  margin-bottom: 62px;
+}
+.sponsors .sponsor-list ul li {
+  float: left;
+  width: 230px;
 }
 
 /*# sourceMappingURL=all.css.map */
