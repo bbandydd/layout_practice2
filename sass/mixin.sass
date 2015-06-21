@@ -1,7 +1,11 @@
-@mixin table-style
-    th, td
-        border: 2px dashed pink
-        padding: 30px
-    th
-        background: purple
-        color: white
+@mixin bg($img)
+    background-image: url("../images/#{$img}")
+    width: image-width('../images/#{$img}')
+    height: image-height('../images/#{$img}')
+
+@mixin btn($color1, $color2)
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    color: #fff
+    background-image: linear-gradient(to top, $color1 40%, $color2 100% )
