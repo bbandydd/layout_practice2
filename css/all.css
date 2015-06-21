@@ -199,14 +199,14 @@ a {
   color: black;
 }
 
-.header, .recent-products .products ul li .price, .featured-products .products ul li .price {
+.header, .recent-products, .recent-products .products ul li .price, .featured-products, .featured-products .products ul li .price {
   zoom: 1;
 }
-.header:before, .recent-products .products ul li .price:before, .featured-products .products ul li .price:before {
+.header:before, .recent-products:before, .recent-products .products ul li .price:before, .featured-products:before, .featured-products .products ul li .price:before {
   content: "";
   display: table;
 }
-.header:after, .recent-products .products ul li .price:after, .featured-products .products ul li .price:after {
+.header:after, .recent-products:after, .recent-products .products ul li .price:after, .featured-products:after, .featured-products .products ul li .price:after {
   content: "";
   display: table;
   clear: both;
@@ -421,7 +421,6 @@ body {
 
 .recent-products {
   margin-bottom: 65px;
-  float: left;
 }
 .recent-products .title {
   margin-bottom: 20px;
@@ -508,7 +507,6 @@ body {
 
 .featured-products {
   margin-bottom: 65px;
-  float: left;
 }
 .featured-products .title {
   margin-bottom: 20px;
