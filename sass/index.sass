@@ -15,10 +15,10 @@ body
 
 .topbar
     background-color: #FFF
+    @extend %clearfix
     .topbar-left
-        display: inline-block
+        float: left
         padding: 10px 0px 10px 100px
-        margin-right: 195px
         p
             display: inline
             color: $text-color
@@ -28,7 +28,8 @@ body
         select
             margin-right: 30px
     .topbar-right
-        display: inline-block
+        float: right
+        padding: 10px 50px 10px 00px
         li
             display: inline
             a
