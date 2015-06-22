@@ -297,11 +297,19 @@ body
     padding: 45px
     background-color: #FFF
     @extend %clearfix
+    button
+        float: right
+        +btn(#7fa51e, #dbe350)
+        width: 55px
+        height: 55px
+        margin-top: -55px
+        &:hover
+            opacity: $hover-opacity
     ul
         li
             float: left
             width: 235px
-            margin-right: 35px
+            margin-right: 25px
             .list1
                 a
                     display: inline-block
@@ -351,7 +359,29 @@ body
                 h4
                     font-size: 26px
                     margin-bottom: 25px
-
+                ul
+                    li
+                        margin-bottom: 10px
+                        .list-left
+                            float: left
+                            p
+                                padding: 5px 0px 0px 23px
+                        .list-right
+                            float: right
+                            background-color: #f6f4f5
+                            width: 148px
+                            height: 95px
+                            -webkit-border-radius: 15px
+                            -moz-border-radius: 15px
+                            border-radius: 15px
+                            border: 1px solid #dcdcdc
+                            background-image: url("../images/comma.png")
+                            background-repeat: no-repeat
+                            background-position: bottom right
+                            p
+                                padding: 15px
+                                font-size: 12px
+                    
 .bottombar
     background-color: #000
     @extend %clearfix

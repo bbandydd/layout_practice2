@@ -631,10 +631,24 @@ body {
   padding: 45px;
   background-color: #FFF;
 }
+.footer button {
+  float: right;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-image: linear-gradient(to top, #7fa51e 40%, #dbe350 100%);
+  width: 55px;
+  height: 55px;
+  margin-top: -55px;
+}
+.footer button:hover {
+  opacity: 0.4;
+}
 .footer ul li {
   float: left;
   width: 235px;
-  margin-right: 35px;
+  margin-right: 25px;
 }
 .footer ul li .list1 a {
   display: inline-block;
@@ -693,6 +707,32 @@ body {
 .footer ul li .list4 h4 {
   font-size: 26px;
   margin-bottom: 25px;
+}
+.footer ul li .list4 ul li {
+  margin-bottom: 10px;
+}
+.footer ul li .list4 ul li .list-left {
+  float: left;
+}
+.footer ul li .list4 ul li .list-left p {
+  padding: 5px 0px 0px 23px;
+}
+.footer ul li .list4 ul li .list-right {
+  float: right;
+  background-color: #f6f4f5;
+  width: 148px;
+  height: 95px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #dcdcdc;
+  background-image: url("../images/comma.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.footer ul li .list4 ul li .list-right p {
+  padding: 15px;
+  font-size: 12px;
 }
 
 .bottombar {
