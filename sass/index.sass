@@ -112,9 +112,15 @@ body
                 color: $highlight-color
     button
         margin: 10px 0px
-        padding: 10px
-        +btn(#7fa51e, #dbe350)
+        padding: 25px 10px 15px 30px
         vertical-align: middle
+        -webkit-border-radius: 5px
+        -moz-border-radius: 5px
+        border-radius: 5px
+        color: #fff
+        background-image: url("../images/cart.png"), linear-gradient(to top, #7fa51e 40%, #dbe350 100% )
+        background-repeat: no-repeat
+        background-position: left center
         &:hover
             opacity: $hover-opacity
         span
@@ -144,17 +150,16 @@ body
     @extend %clearfix
     .title
         margin-bottom: 20px
+        background-image: url("../images/separator.png")
+        background-repeat: repeat-x
+        background-position: center
         h2
             font-size: 24px
             display: inline
             margin-bottom: 20px
-        .separator
-            display: inline-block
-            text-indent: -9999px
-            width: 845px
-            background-image: url("../images/separator.png")
         button
             +btn(#7fa51e, #dbe350)
+            float: right
             &:hover
                 opacity: $hover-opacity
     .products
@@ -171,7 +176,8 @@ body
                     border-bottom: 2px solid #e7e7e7
                     .sale
                         position: absolute
-                        top: 10
+                        top: 10px
+                        left: 10px
                     span
                         display: inline-block
                         vertical-align: middle
@@ -208,16 +214,15 @@ body
     @extend %clearfix
     .title
         margin-bottom: 20px
+        background-image: url("../images/separator.png")
+        background-repeat: repeat-x
+        background-position: center
         h2
             font-size: 24px
             display: inline
             margin-bottom: 20px
-        .separator
-            display: inline-block
-            text-indent: -9999px
-            width: 815px
-            background-image: url("../images/separator.png")
         button
+            float: right
             +btn(#7fa51e, #dbe350)
             &:hover
                 opacity: $hover-opacity
@@ -235,7 +240,8 @@ body
                     border-bottom: 2px solid #e7e7e7
                     .sale
                         position: absolute
-                        top: 10
+                        top: 10px
+                        left: 10px
                     span
                         display: inline-block
                         vertical-align: middle

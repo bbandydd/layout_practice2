@@ -378,13 +378,15 @@ body {
 }
 .menu button {
   margin: 10px 0px;
-  padding: 10px;
+  padding: 25px 10px 15px 30px;
+  vertical-align: middle;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   color: #fff;
-  background-image: linear-gradient(to top, #7fa51e 40%, #dbe350 100%);
-  vertical-align: middle;
+  background-image: url("../images/cart.png"), linear-gradient(to top, #7fa51e 40%, #dbe350 100%);
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 .menu button:hover {
   opacity: 0.4;
@@ -425,17 +427,14 @@ body {
 }
 .recent-products .title {
   margin-bottom: 20px;
+  background-image: url("../images/separator.png");
+  background-repeat: repeat-x;
+  background-position: center;
 }
 .recent-products .title h2 {
   font-size: 24px;
   display: inline;
   margin-bottom: 20px;
-}
-.recent-products .title .separator {
-  display: inline-block;
-  text-indent: -9999px;
-  width: 845px;
-  background-image: url("../images/separator.png");
 }
 .recent-products .title button {
   -webkit-border-radius: 5px;
@@ -443,6 +442,7 @@ body {
   border-radius: 5px;
   color: #fff;
   background-image: linear-gradient(to top, #7fa51e 40%, #dbe350 100%);
+  float: right;
 }
 .recent-products .title button:hover {
   opacity: 0.4;
@@ -460,7 +460,8 @@ body {
 }
 .recent-products .products ul li .price .sale {
   position: absolute;
-  top: 10;
+  top: 10px;
+  left: 10px;
 }
 .recent-products .products ul li .price span {
   display: inline-block;
@@ -511,19 +512,17 @@ body {
 }
 .featured-products .title {
   margin-bottom: 20px;
+  background-image: url("../images/separator.png");
+  background-repeat: repeat-x;
+  background-position: center;
 }
 .featured-products .title h2 {
   font-size: 24px;
   display: inline;
   margin-bottom: 20px;
 }
-.featured-products .title .separator {
-  display: inline-block;
-  text-indent: -9999px;
-  width: 815px;
-  background-image: url("../images/separator.png");
-}
 .featured-products .title button {
+  float: right;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -546,7 +545,8 @@ body {
 }
 .featured-products .products ul li .price .sale {
   position: absolute;
-  top: 10;
+  top: 10px;
+  left: 10px;
 }
 .featured-products .products ul li .price span {
   display: inline-block;
