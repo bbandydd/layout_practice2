@@ -23,6 +23,7 @@ body
     &:hover
         opacity: $hover-opacity
 
+//topbar
 .topbar
     background-color: #FFF
     @extend %clearfix
@@ -50,6 +51,7 @@ body
         color: $text-color
         margin-right: 5px
 
+//header
 .header
     @extend %clearfix 
     margin-bottom: 35px
@@ -104,6 +106,7 @@ body
     .dribble
         +bg('dribble.png')                    
 
+//menu
 .menu
     padding: 20px 0px
     margin-bottom: 60px
@@ -139,6 +142,7 @@ body
         position: relative
         top: -5px
 
+//slider
 .slider
     background-color: #FFF
     margin-bottom: 60px
@@ -156,134 +160,135 @@ body
         &:hover
             opacity: $hover-opacity 
 
+//recent-products-list
+.recent-products-list
+    margin-bottom: 65px
+    @extend %clearfix
+.recent-title
+    margin-bottom: 20px
+    background-image: url("../images/separator.png")
+    background-repeat: repeat-x
+    background-position: center
+    h2
+        font-size: 24px
+        display: inline
+        margin-bottom: 20px
+    button
+        +btn(#7fa51e, #dbe350)
+        float: right
+        &:hover
+            opacity: $hover-opacity
 .recent-products
+    li
+        width: 277px
+        float: left
+        background-color: #fff
+        margin-right: 18px
+.recent-price
+    @extend %clearfix
+    position: relative
+    padding: 10px 0px
+    border-bottom: 2px solid #e7e7e7
+    .sale
+        position: absolute
+        top: 10px
+        left: 10px
+    span
+        display: inline-block
+        vertical-align: middle
+        font-size: 18px
+        padding: 15px 0px 0px 10px
+        margin-right: 80px
+    button
+        +btn(#878787, #878787)
+        padding: 10px
+        float: right
+        font-size: 12px
+        &:hover
+            opacity: $hover-opacity
+.recent-introduction
+    padding: 10px
+    border-bottom: 2px solid #e7e7e7
+    h3
+        font-size: 20px
+        margin-bottom: 15px
+    p
+        font-size: 14px
+        line-height: 1.8
+        color: #808080
+.recent-view
+    padding: 10px
+    a
+        font-size: 16px
+        color: $highlight-color
+        &:hover
+            opacity: $hover-opacity
+
+//featured-products-list
+.featured-products-list
     margin-bottom: 65px
     @extend %clearfix
-    .title
+.featured-title
+    margin-bottom: 20px
+    background-image: url("../images/separator.png")
+    background-repeat: repeat-x
+    background-position: center
+    h2
+        font-size: 24px
+        display: inline
         margin-bottom: 20px
-        background-image: url("../images/separator.png")
-        background-repeat: repeat-x
-        background-position: center
-        h2
-            font-size: 24px
-            display: inline
-            margin-bottom: 20px
-        button
-            +btn(#7fa51e, #dbe350)
-            float: right
-            &:hover
-                opacity: $hover-opacity
-    .products
-        ul
-            li
-                width: 277px
-                float: left
-                background-color: #fff
-                margin-right: 18px
-                .price
-                    @extend %clearfix
-                    position: relative
-                    padding: 10px 0px
-                    border-bottom: 2px solid #e7e7e7
-                    .sale
-                        position: absolute
-                        top: 10px
-                        left: 10px
-                    span
-                        display: inline-block
-                        vertical-align: middle
-                        font-size: 18px
-                        padding: 15px 0px 0px 10px
-                        margin-right: 80px
-                    button
-                        +btn(#878787, #878787)
-                        padding: 10px
-                        float: right
-                        font-size: 12px
-                        &:hover
-                            opacity: $hover-opacity
-                .introduction
-                    padding: 10px
-                    border-bottom: 2px solid #e7e7e7
-                    h3
-                        font-size: 20px
-                        margin-bottom: 15px
-                    p
-                        font-size: 14px
-                        line-height: 1.8
-                        color: #808080
-                .view
-                    padding: 10px
-                    a
-                        font-size: 16px
-                        color: $highlight-color
-                        &:hover
-                            opacity: $hover-opacity
-
+    button
+        float: right
+        +btn(#7fa51e, #dbe350)
+        &:hover
+            opacity: $hover-opacity
 .featured-products
-    margin-bottom: 65px
+    li
+        width: 277px
+        float: left
+        background-color: #fff
+        margin-right: 18px
+.featured-price
     @extend %clearfix
-    .title
-        margin-bottom: 20px
-        background-image: url("../images/separator.png")
-        background-repeat: repeat-x
-        background-position: center
-        h2
-            font-size: 24px
-            display: inline
-            margin-bottom: 20px
-        button
-            float: right
-            +btn(#7fa51e, #dbe350)
-            &:hover
-                opacity: $hover-opacity
-    .products
-        ul
-            li
-                width: 277px
-                float: left
-                background-color: #fff
-                margin-right: 18px
-                .price
-                    @extend %clearfix
-                    position: relative
-                    padding: 10px 0px
-                    border-bottom: 2px solid #e7e7e7
-                    .sale
-                        position: absolute
-                        top: 10px
-                        left: 10px
-                    span
-                        display: inline-block
-                        vertical-align: middle
-                        font-size: 18px
-                        padding: 15px 0px 0px 10px
-                        margin-right: 80px
-                    button
-                        +btn(#878787, #878787)
-                        padding: 10px
-                        float: right
-                        font-size: 12px
-                        &:hover
-                            opacity: $hover-opacity
-                .introduction
-                    padding: 10px
-                    border-bottom: 2px solid #e7e7e7
-                    h3
-                        font-size: 20px
-                        margin-bottom: 15px
-                    p
-                        font-size: 14px
-                        line-height: 1.8
-                        color: #808080
-                .view
-                    padding: 10px
-                    a
-                        font-size: 16px
-                        color: $highlight-color
-                        &:hover
-                            opacity: $hover-opacity
+    position: relative
+    padding: 10px 0px
+    border-bottom: 2px solid #e7e7e7
+    .sale
+        position: absolute
+        top: 10px
+        left: 10px
+    span
+        display: inline-block
+        vertical-align: middle
+        font-size: 18px
+        padding: 15px 0px 0px 10px
+        margin-right: 80px
+    button
+        +btn(#878787, #878787)
+        padding: 10px
+        float: right
+        font-size: 12px
+        &:hover
+            opacity: $hover-opacity
+.featured-introduction
+    padding: 10px
+    border-bottom: 2px solid #e7e7e7
+    h3
+        font-size: 20px
+        margin-bottom: 15px
+    p
+        font-size: 14px
+        line-height: 1.8
+        color: #808080
+.featured-view
+    padding: 10px
+    a
+        font-size: 16px
+        color: $highlight-color
+        &:hover
+            opacity: $hover-opacity
 
+//sponsors
 .sponsors
     @extend %clearfix
 .sponsor-title
@@ -309,6 +314,7 @@ body
         a:hover
             opacity: $hover-opacity
 
+//footer
 .footer
     padding: 45px
     background-color: #FFF
@@ -317,7 +323,7 @@ body
         float: left
         width: 235px
         margin-right: 25px
-.list1
+.footer-list1
     a
         display: inline-block
         margin-bottom: 45px
@@ -330,7 +336,7 @@ body
         float: left
         width: 40px
         margin-right: 5px
-.list2
+.footer-list2
     h4
         font-size: 26px
         margin-bottom: 25px
@@ -350,7 +356,7 @@ body
             padding: 12px
         p
             font-size: 14px
-.list3
+.footer-list3
     padding-left: 30px
     h4
         font-size: 26px
@@ -360,32 +366,33 @@ body
         font-size: 14px
     .info1, .info2
         margin-bottom: 35px
-.list4
+.footer-list4
     h4
         font-size: 26px
         margin-bottom: 25px
     li
         margin-bottom: 10px
-.list4-left
-    float: left
-    p
-        padding: 5px 0px 0px 23px
-.list4-right
-    float: right
-    background-color: #f6f4f5
-    width: 148px
-    height: 95px
-    -webkit-border-radius: 15px
-    -moz-border-radius: 15px
-    border-radius: 15px
-    border: 1px solid #dcdcdc
-    background-image: url("../images/comma.png")
-    background-repeat: no-repeat
-    background-position: bottom right
-    p
-        padding: 15px
-        font-size: 12px
-                    
+    .list4-left
+        float: left
+        p
+            padding: 5px 0px 0px 23px
+    .list4-right
+        float: right
+        background-color: #f6f4f5
+        width: 148px
+        height: 95px
+        -webkit-border-radius: 15px
+        -moz-border-radius: 15px
+        border-radius: 15px
+        border: 1px solid #dcdcdc
+        background-image: url("../images/comma.png")
+        background-repeat: no-repeat
+        background-position: bottom right
+        p
+            padding: 15px
+            font-size: 12px
+             
+//bottombar       
 .bottombar
     background-color: #000
     @extend %clearfix
