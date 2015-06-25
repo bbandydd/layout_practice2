@@ -10,12 +10,13 @@
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="expires" content="Thu, 31 Dec 2016 23:59:59 GMT" />
     <link rel="stylesheet" type="text/css" href="css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>ß
 </head>
 <body>
     <div class="wrap">
         
         <!-- scroll-btn -->
-        <button class="scroll-btn">
+        <button class="scroll-btn" onclick="$('body').animate({scrollTop:0}, 'slow');">
             <img src="images/arrow.png" height="14" width="28">
         </button>
 
@@ -101,80 +102,78 @@
                 <button>→</button>
                 <button>←</button>
             </div>
-            <div class="recent-products">
-                <ul>
-                    <li>
-                        <div class="recent-price">
-                            <img class="sale" src="images/sale.png">
-                            <a href="#"><img src="images/recent-products1.png" height="173" width="280"></a>
-                           <span>$2499.99</span>
-                           <button>ADD TO CART</button>
-                        </div>
-                        <div class="recent-introduction">
-                            <h3>EOS 450D Cemera</h3>
-                            <p>Lorem ipsum dolor sit amet, conse  
-                            adipiscing elit, sed diam nonu mmy  
-                            mod tincidunt ut lao dolore.</p>
-                        </div>
-                        <div class="recent-view">
-                            <a href="#">View the Product</a>
-                            >
-                        </div>
-                    </li>
-                    <li>
-                        <div class="recent-price">
-                            <a href="#"><img src="images/recent-products2.png" height="173" width="280"></a>
-                            <span>$499.99</span>
-                            <button>ADD TO CART</button>
-                        </div>
-                        <div class="recent-introduction">
-                            <h3>A Set of Camera Lenses</h3>
-                            <p>Lorem ipsum dolor sit amet, conse  
-                            adipiscing elit, sed diam nonu mmy  
-                            mod tincidunt ut lao dolore.</p>
-                        </div>
-                        <div class="recent-view">
-                            <a href="#">View the Product</a>
-                            >
-                        </div>
-                    </li>
-                    <li>
-                        <div class="recent-price">
-                            <img class="sale" src="images/sale.png">
-                            <a href="#"><img src="images/recent-products3.png" height="173" width="280"></a>
-                            <span>$749.59</span>
-                            <button>ADD TO CART</button>
-                        </div>
-                        <div class="recent-introduction">
-                            <h3>Professional Camera</h3>
-                            <p>Lorem ipsum dolor sit amet, conse  
-                            adipiscing elit, sed diam nonu mmy  
-                            mod tincidunt ut lao dolore.</p>
-                        </div>
-                        <div class="recent-view">
-                            <a href="#">View the Product</a>
-                            >
-                        </div>
-                    </li>
-                    <li>
-                        <div class="recent-price">
-                            <a href="#"><img src="images/recent-products4.png" height="173" width="280"></a>
-                            <span>$5499.99</span>
-                            <button>ADD TO CART</button>
-                        </div>
-                        <div class="recent-introduction">
-                            <h3>EOS 2100D Camera</h3>
-                            <p>Lorem ipsum dolor sit amet, conse  
-                            adipiscing elit, sed diam nonu mmy  
-                            mod tincidunt ut lao dolore.</p>
-                        </div>
-                        <div class="recent-view">
-                            <a href="#">View the Product</a>
-                            >
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <ul class="recent-products">
+                <li>
+                    <div class="recent-price">
+                        <img class="sale" src="images/sale.png">
+                        <a href="#"><img src="images/recent-products1.png" height="173" width="280"></a>
+                       <span>$2499.99</span>
+                       <button>ADD TO CART</button>
+                    </div>
+                    <div class="recent-introduction">
+                        <h3>EOS 450D Cemera</h3>
+                        <p>Lorem ipsum dolor sit amet, conse  
+                        adipiscing elit, sed diam nonu mmy  
+                        mod tincidunt ut lao dolore.</p>
+                    </div>
+                    <div class="recent-view">
+                        <a href="#">View the Product</a>
+                        >
+                    </div>
+                </li>
+                <li>
+                    <div class="recent-price">
+                        <a href="#"><img src="images/recent-products2.png" height="173" width="280"></a>
+                        <span>$499.99</span>
+                        <button>ADD TO CART</button>
+                    </div>
+                    <div class="recent-introduction">
+                        <h3>A Set of Camera Lenses</h3>
+                        <p>Lorem ipsum dolor sit amet, conse  
+                        adipiscing elit, sed diam nonu mmy  
+                        mod tincidunt ut lao dolore.</p>
+                    </div>
+                    <div class="recent-view">
+                        <a href="#">View the Product</a>
+                        >
+                    </div>
+                </li>
+                <li>
+                    <div class="recent-price">
+                        <img class="sale" src="images/sale.png">
+                        <a href="#"><img src="images/recent-products3.png" height="173" width="280"></a>
+                        <span>$749.59</span>
+                        <button>ADD TO CART</button>
+                    </div>
+                    <div class="recent-introduction">
+                        <h3>Professional Camera</h3>
+                        <p>Lorem ipsum dolor sit amet, conse  
+                        adipiscing elit, sed diam nonu mmy  
+                        mod tincidunt ut lao dolore.</p>
+                    </div>
+                    <div class="recent-view">
+                        <a href="#">View the Product</a>
+                        >
+                    </div>
+                </li>
+                <li>
+                    <div class="recent-price">
+                        <a href="#"><img src="images/recent-products4.png" height="173" width="280"></a>
+                        <span>$5499.99</span>
+                        <button>ADD TO CART</button>
+                    </div>
+                    <div class="recent-introduction">
+                        <h3>EOS 2100D Camera</h3>
+                        <p>Lorem ipsum dolor sit amet, conse  
+                        adipiscing elit, sed diam nonu mmy  
+                        mod tincidunt ut lao dolore.</p>
+                    </div>
+                    <div class="recent-view">
+                        <a href="#">View the Product</a>
+                        >
+                    </div>
+                </li>
+            </ul>
         </div>
 
         <!--featured-products-->
@@ -184,79 +183,77 @@
                 <button>→</button>
                 <button>←</button>
             </div>
-            <div class="featured-products">
-                <ul>
-                    <li>
-                        <div class="featured-price">
-                            <a href="#"><img src="images/featured-products1.png" height="173" width="280"></a>
-                           <span>$2499.99</span>
-                           <button>ADD TO CART</button>
-                        </div>
-                        <div class="featured-introduction">
-                            <h3>EOS 450D Cemera</h3>
-                            <p>Lorem ipsum dolor sit amet, conse  
-                            adipiscing elit, sed diam nonu mmy  
-                            mod tincidunt ut lao dolore.</p>
-                        </div>
-                        <div class="featured-view">
-                            <a href="#">View the Product</a>
-                            >
-                        </div>
-                    </li>
-                    <li>
-                        <div class="featured-price">
-                            <a href="#"><img src="images/featured-products2.png" height="173" width="280"></a>
-                            <span>$499.99</span>
-                            <button>ADD TO CART</button>
-                        </div>
-                        <div class="featured-introduction">
-                            <h3>Photography Umbrella</h3>
-                            <p>Lorem ipsum dolor sit amet, conse  
-                            adipiscing elit, sed diam nonu mmy  
-                            mod tincidunt ut lao dolore.</p>
-                        </div>
-                        <div class="featured-view">
-                            <a href="#">View the Product</a>
-                            >
-                        </div>
-                    </li>
-                    <li>
-                        <div class="featured-price">
-                            <img class="sale" src="images/sale.png">
-                            <a href="#"><img src="images/featured-products3.png" height="173" width="280"></a>
-                            <span>$749.59</span>
-                            <button>ADD TO CART</button>
-                        </div>
-                        <div class="featured-introduction">
-                            <h3>EOS 450D Camera Lens</h3>
-                            <p>Lorem ipsum dolor sit amet, conse  fs
-                            adipiscing elit, sed diam nonu mmy  
-                            mod tincidunt ut lao dolore.</p>
-                        </div>
-                        <div class="featured-view">
-                            <a href="#">View the Product</a>
-                            >
-                        </div>
-                    </li>
-                    <li>
-                        <div class="featured-price">
-                            <a href="#"><img src="images/featured-products4.png" height="173" width="280"></a>
-                            <span>$5499.99</span>
-                            <button>ADD TO CART</button>
-                        </div>
-                        <div class="featured-introduction">
-                            <h3>50 mm Camera Lens</h3>
-                            <p>Lorem ipsum dolor sit amet, conse  
-                            adipiscing elit, sed diam nonu mmy  
-                            mod tincidunt ut lao dolore.</p>
-                        </div>
-                        <div class="featured-view">
-                            <a href="#">View the Product</a>
-                            >
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <ul class="featured-products">
+                <li>
+                    <div class="featured-price">
+                        <a href="#"><img src="images/featured-products1.png" height="173" width="280"></a>
+                       <span>$2499.99</span>
+                       <button>ADD TO CART</button>
+                    </div>
+                    <div class="featured-introduction">
+                        <h3>EOS 450D Cemera</h3>
+                        <p>Lorem ipsum dolor sit amet, conse  
+                        adipiscing elit, sed diam nonu mmy  
+                        mod tincidunt ut lao dolore.</p>
+                    </div>
+                    <div class="featured-view">
+                        <a href="#">View the Product</a>
+                        >
+                    </div>
+                </li>
+                <li>
+                    <div class="featured-price">
+                        <a href="#"><img src="images/featured-products2.png" height="173" width="280"></a>
+                        <span>$499.99</span>
+                        <button>ADD TO CART</button>
+                    </div>
+                    <div class="featured-introduction">
+                        <h3>Photography Umbrella</h3>
+                        <p>Lorem ipsum dolor sit amet, conse  
+                        adipiscing elit, sed diam nonu mmy  
+                        mod tincidunt ut lao dolore.</p>
+                    </div>
+                    <div class="featured-view">
+                        <a href="#">View the Product</a>
+                        >
+                    </div>
+                </li>
+                <li>
+                    <div class="featured-price">
+                        <img class="sale" src="images/sale.png">
+                        <a href="#"><img src="images/featured-products3.png" height="173" width="280"></a>
+                        <span>$749.59</span>
+                        <button>ADD TO CART</button>
+                    </div>
+                    <div class="featured-introduction">
+                        <h3>EOS 450D Camera Lens</h3>
+                        <p>Lorem ipsum dolor sit amet, conse  fs
+                        adipiscing elit, sed diam nonu mmy  
+                        mod tincidunt ut lao dolore.</p>
+                    </div>
+                    <div class="featured-view">
+                        <a href="#">View the Product</a>
+                        >
+                    </div>
+                </li>
+                <li>
+                    <div class="featured-price">
+                        <a href="#"><img src="images/featured-products4.png" height="173" width="280"></a>
+                        <span>$5499.99</span>
+                        <button>ADD TO CART</button>
+                    </div>
+                    <div class="featured-introduction">
+                        <h3>50 mm Camera Lens</h3>
+                        <p>Lorem ipsum dolor sit amet, conse  
+                        adipiscing elit, sed diam nonu mmy  
+                        mod tincidunt ut lao dolore.</p>
+                    </div>
+                    <div class="featured-view">
+                        <a href="#">View the Product</a>
+                        >
+                    </div>
+                </li>
+            </ul>
         </div>
 
         <!--sponsors-->
