@@ -199,14 +199,14 @@ a {
   color: black;
 }
 
-.topbar, .header, .recent-products, .recent-products .products ul li .price, .featured-products, .featured-products .products ul li .price, .sponsors, .sponsors .sponsor-list, .footer, .bottombar {
+.topbar, .header, .menu, .recent-products, .recent-products .products ul li .price, .featured-products, .featured-products .products ul li .price, .sponsors, .sponsor-list, .footer, .bottombar {
   zoom: 1;
 }
-.topbar:before, .header:before, .recent-products:before, .recent-products .products ul li .price:before, .featured-products:before, .featured-products .products ul li .price:before, .sponsors:before, .sponsors .sponsor-list:before, .footer:before, .bottombar:before {
+.topbar:before, .header:before, .menu:before, .recent-products:before, .recent-products .products ul li .price:before, .featured-products:before, .featured-products .products ul li .price:before, .sponsors:before, .sponsor-list:before, .footer:before, .bottombar:before {
   content: "";
   display: table;
 }
-.topbar:after, .header:after, .recent-products:after, .recent-products .products ul li .price:after, .featured-products:after, .featured-products .products ul li .price:after, .sponsors:after, .sponsors .sponsor-list:after, .footer:after, .bottombar:after {
+.topbar:after, .header:after, .menu:after, .recent-products:after, .recent-products .products ul li .price:after, .featured-products:after, .featured-products .products ul li .price:after, .sponsors:after, .sponsor-list:after, .footer:after, .bottombar:after {
   content: "";
   display: table;
   clear: both;
@@ -237,38 +237,56 @@ body {
   height: 2px;
 }
 
+.scroll-btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-image: linear-gradient(to top, #7fa51e 40%, #dbe350 100%);
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  right: 200px;
+  bottom: 0px;
+}
+.scroll-btn:hover {
+  opacity: 0.4;
+}
+
 .topbar {
   background-color: #FFF;
 }
-.topbar .topbar-left {
+
+.topbar-left {
   float: left;
   padding: 10px 0px 10px 100px;
 }
-.topbar .topbar-left p {
+.topbar-left p {
   display: inline;
   color: #7b7b7b;
 }
-.topbar .topbar-left p a:hover {
+.topbar-left a:hover {
   color: pink;
 }
-.topbar .topbar-left select {
+.topbar-left select {
   margin-right: 30px;
 }
-.topbar .topbar-right {
+
+.topbar-right {
   float: right;
   padding: 10px 50px 10px 0px;
 }
-.topbar .topbar-right li {
+.topbar-right li {
   display: inline;
 }
-.topbar .topbar-right li a {
+.topbar-right a {
   color: #7b7b7b;
   margin-right: 10px;
 }
-.topbar .topbar-right li a:hover {
+.topbar-right a:hover {
   color: pink;
 }
-.topbar .topbar-right li span {
+.topbar-right span {
   color: #7b7b7b;
   margin-right: 5px;
 }
@@ -288,11 +306,12 @@ body {
   display: block;
   text-indent: -99999px;
 }
-.header .header-right {
+
+.header-right {
   float: right;
   margin-top: 45px;
 }
-.header .header-right .search-input {
+.header-right input {
   width: 202px;
   height: 38px;
   padding-left: 10px;
@@ -300,7 +319,7 @@ body {
   -moz-border-radius: 5px 0px 0px 5px;
   border-radius: 5px 0px 0px 5px;
 }
-.header .header-right .search-button {
+.header-right button {
   background-image: url("../images/search.png");
   width: 40px;
   height: 40px;
@@ -313,44 +332,45 @@ body {
   background-repeat: no-repeat;
   margin-right: 5px;
 }
-.header .header-right .search-button:hover {
+.header-right button:hover {
   opacity: 0.4;
 }
-.header .header-right ul {
+
+.share {
   display: inline-block;
   position: relative;
   top: 12px;
 }
-.header .header-right ul li {
+.share li {
   display: inline;
 }
-.header .header-right ul li a {
+.share a {
   display: inline-block;
 }
-.header .header-right ul li a:hover {
+.share a:hover {
   opacity: 0.4;
 }
-.header .header-right ul li .rss {
+.share .rss {
   background-image: url("../images/rss.png");
   width: 40px;
   height: 40px;
 }
-.header .header-right ul li .pinterest {
+.share .pinterest {
   background-image: url("../images/pinterest.png");
   width: 40px;
   height: 40px;
 }
-.header .header-right ul li .facebook {
+.share .facebook {
   background-image: url("../images/facebook.png");
   width: 40px;
   height: 40px;
 }
-.header .header-right ul li .twitter {
+.share .twitter {
   background-image: url("../images/twitter.png");
   width: 40px;
   height: 40px;
 }
-.header .header-right ul li .dribble {
+.share .dribble {
   background-image: url("../images/dribble.png");
   width: 40px;
   height: 40px;
@@ -359,26 +379,27 @@ body {
 .menu {
   padding: 20px 0px;
   margin-bottom: 60px;
-}
-.menu .separator {
-  background-image: url("../images/separator.png");
-  height: 15px;
+  background-image: url("../images/separator.png"), url("../images/separator.png");
+  background-repeat: repeat-x, repeat-x;
+  background-position: top, bottom;
 }
 .menu ul {
-  display: inline;
-  margin-right: 310px;
+  float: left;
+  padding-top: 30px;
 }
-.menu ul li {
+.menu li {
   display: inline;
   font-size: 18px;
   margin-right: 35px;
 }
-.menu ul li a:hover {
+.menu li a:hover {
   color: #9cb929;
 }
-.menu button {
+
+.cart-btn {
+  float: right;
   margin: 10px 0px;
-  padding: 25px 10px 15px 30px;
+  padding: 25px 10px 15px 40px;
   vertical-align: middle;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -386,12 +407,12 @@ body {
   color: #fff;
   background-image: url("../images/cart.png"), linear-gradient(to top, #7fa51e 40%, #dbe350 100%);
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: 10% 50%;
 }
-.menu button:hover {
+.cart-btn:hover {
   opacity: 0.4;
 }
-.menu button span {
+.cart-btn span {
   display: inline;
   position: relative;
   top: -5px;
@@ -401,15 +422,16 @@ body {
   background-color: #FFF;
   margin-bottom: 60px;
 }
-.slider .quote {
+
+.quote {
   padding: 10px;
 }
-.slider .quote span {
+.quote span {
   font-size: 32px;
   margin-right: 100px;
   vertical-align: middle;
 }
-.slider .quote button {
+.quote button {
   width: 180px;
   height: 50px;
   -webkit-border-radius: 5px;
@@ -418,7 +440,7 @@ body {
   color: #fff;
   background-image: linear-gradient(to top, #7fa51e 40%, #dbe350 100%);
 }
-.slider .quote button:hover {
+.quote button:hover {
   opacity: 0.4;
 }
 
@@ -592,38 +614,37 @@ body {
   opacity: 0.4;
 }
 
-.sponsors .title {
+.sponsor-title {
   margin-bottom: 20px;
+  background-image: url("../images/separator.png");
+  background-repeat: repeat-x;
+  background-position: center;
 }
-.sponsors .title h2 {
+.sponsor-title h2 {
   font-size: 24px;
   display: inline;
   margin-bottom: 20px;
 }
-.sponsors .title .separator {
-  display: inline-block;
-  text-indent: -9999px;
-  width: 815px;
-  background-image: url("../images/separator.png");
-}
-.sponsors .title button {
+.sponsor-title button {
+  float: right;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   color: #fff;
   background-image: linear-gradient(to top, #7fa51e 40%, #dbe350 100%);
 }
-.sponsors .title button:hover {
+.sponsor-title button:hover {
   opacity: 0.4;
 }
-.sponsors .sponsor-list {
+
+.sponsor-list {
   margin-bottom: 62px;
 }
-.sponsors .sponsor-list ul li {
+.sponsor-list li {
   float: left;
   width: 230px;
 }
-.sponsors .sponsor-list ul li a:hover {
+.sponsor-list li a:hover {
   opacity: 0.4;
 }
 
@@ -631,46 +652,34 @@ body {
   padding: 45px;
   background-color: #FFF;
 }
-.footer button {
-  float: right;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  color: #fff;
-  background-image: linear-gradient(to top, #7fa51e 40%, #dbe350 100%);
-  width: 55px;
-  height: 55px;
-  margin-top: -55px;
-}
-.footer button:hover {
-  opacity: 0.4;
-}
-.footer ul li {
+.footer li {
   float: left;
   width: 235px;
   margin-right: 25px;
 }
-.footer ul li .list1 a {
+
+.list1 a {
   display: inline-block;
   margin-bottom: 45px;
 }
-.footer ul li .list1 a:hover {
+.list1 a:hover {
   opacity: 0.4;
 }
-.footer ul li .list1 h4 {
+.list1 h4 {
   font-size: 26px;
   margin-bottom: 20px;
 }
-.footer ul li .list1 ul li {
+.list1 li {
   float: left;
   width: 40px;
   margin-right: 5px;
 }
-.footer ul li .list2 h4 {
+
+.list2 h4 {
   font-size: 26px;
   margin-bottom: 25px;
 }
-.footer ul li .list2 ul li {
+.list2 li {
   width: 266px;
   height: 70px;
   margin-bottom: 20px;
@@ -679,45 +688,49 @@ body {
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
-.footer ul li .list2 ul li img {
+.list2 li img {
   float: left;
   margin-right: 10px;
 }
-.footer ul li .list2 ul li h5 {
+.list2 li h5 {
   font-size: 16px;
   padding: 12px;
 }
-.footer ul li .list2 ul li p {
+.list2 li p {
   font-size: 14px;
 }
-.footer ul li .list3 {
+
+.list3 {
   padding-left: 30px;
 }
-.footer ul li .list3 h4 {
+.list3 h4 {
   font-size: 26px;
   margin-bottom: 25px;
 }
-.footer ul li .list3 p {
+.list3 p {
   margin-bottom: 8px;
   font-size: 14px;
 }
-.footer ul li .list3 .info1, .footer ul li .list3 .info2 {
+.list3 .info1, .list3 .info2 {
   margin-bottom: 35px;
 }
-.footer ul li .list4 h4 {
+
+.list4 h4 {
   font-size: 26px;
   margin-bottom: 25px;
 }
-.footer ul li .list4 ul li {
+.list4 li {
   margin-bottom: 10px;
 }
-.footer ul li .list4 ul li .list-left {
+
+.list4-left {
   float: left;
 }
-.footer ul li .list4 ul li .list-left p {
+.list4-left p {
   padding: 5px 0px 0px 23px;
 }
-.footer ul li .list4 ul li .list-right {
+
+.list4-right {
   float: right;
   background-color: #f6f4f5;
   width: 148px;
@@ -730,7 +743,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom right;
 }
-.footer ul li .list4 ul li .list-right p {
+.list4-right p {
   padding: 15px;
   font-size: 12px;
 }
@@ -738,29 +751,29 @@ body {
 .bottombar {
   background-color: #000;
 }
-.bottombar .bottombar-left {
+
+.bottombar-left {
   float: left;
   padding: 12px 0px 7px 45px;
 }
-.bottombar .bottombar-left li {
+.bottombar-left li {
   display: inline;
 }
-.bottombar .bottombar-left li a {
+.bottombar-left li a {
   color: #7b7b7b;
   margin-right: 10px;
   font-size: 14px;
 }
-.bottombar .bottombar-left li a:hover {
+.bottombar-left li a:hover {
   color: pink;
 }
-.bottombar .bottombar-left li span {
+.bottombar-left li span {
   color: #7b7b7b;
   margin-right: 5px;
 }
-.bottombar .bottombar-right {
+
+.bottombar-right {
   float: right;
-}
-.bottombar .bottombar-right p {
   color: #7b7b7b;
   padding: 12px 50px 7px 0px;
   font-size: 14px;

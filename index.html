@@ -13,7 +13,13 @@
 </head>
 <body>
     <div class="wrap">
-        <!--topbar-->
+        
+        <!-- scroll-btn -->
+        <button class="scroll-btn">
+            <img src="images/arrow.png" height="14" width="28">
+        </button>
+
+        <!-- topbar -->
         <div class="topbar">
             <div class="green-bar"></div>
             <div class="topbar-left">
@@ -42,9 +48,9 @@
                 <a href="#">CameraStore</a>
             </h1>
             <div class="header-right">
-                <input class="search-input" type="text" placeholder="Search...">
-                <button class="search-button"></button>
-                <ul>
+                <input type="text" placeholder="Search...">
+                <button></button>
+                <ul class="share">
                     <li>
                         <a class="rss" href="#"></a>
                     </li>
@@ -64,10 +70,8 @@
             </div>
         </div>
 
-        <!--menu-->
-        
+        <!--menu-->       
         <div class="menu">
-            <div class="separator"></div>
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">APPAREL</a></li>
@@ -76,10 +80,9 @@
                 <li><a href="#">PORTFOLIO</a></li>
                 <li><a href="#">CONTACT US</a></li>
             </ul>
-            <button>
+            <button class="cart-btn">
                 <span>(0)ITEMS</span>
             </button>
-            <div class="separator"></div>
         </div>
 
         <!--slider-->
@@ -258,124 +261,110 @@
 
         <!--sponsors-->
         <div class="sponsors">
-            <div class="title">
+            <div class="sponsor-title">
                 <h2>CHECK OUR BRANDS</h2>
-                <div class="separator">1</div>
-                <button>←</button>
                 <button>→</button>
+                <button>←</button>
             </div>
-            <div class="sponsor-list">
-                <ul>
-                    <li>
-                        <a href="#"><img src="images/sponsors1.png" height="132" width="236"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/sponsors2.png" height="132" width="236"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/sponsors3.png" height="132" width="236"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/sponsors4.png" height="132" width="236"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/sponsors5.png" height="132" width="236"></a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="sponsor-list">
+                <li>
+                    <a href="#"><img src="images/sponsors1.png" height="132" width="236"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/sponsors2.png" height="132" width="236"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/sponsors3.png" height="132" width="236"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/sponsors4.png" height="132" width="236"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/sponsors5.png" height="132" width="236"></a>
+                </li>
+            </ul>
         </div>
 
         <!--footer-->
         <div class="footer">
-            <button>
-                <img src="images/arrow.png" height="14" width="28">
-            </button>
             <ul>
-                <li>
-                    <div class="list1">
-                        <a href=""><img src="images/logo.png" height="55" width="314" alt=""></a>
-                        <h4>Follow us</h4>
-                        <ul>
-                            <li>
-                                <a href="#"><img src="images/rss.png" height="40" width="40"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/pinterest.png" height="40" width="40"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/facebook.png" height="40" width="40"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/twitter.png" height="40" width="40"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/dribble.png" height="40" width="40"></a>
-                            </li>
-                        </ul>
+                <li class="list1">
+                    <a href=""><img src="images/logo.png" height="55" width="314" alt=""></a>
+                    <h4>Follow us</h4>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/rss.png" height="40" width="40"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/pinterest.png" height="40" width="40"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/facebook.png" height="40" width="40"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/twitter.png" height="40" width="40"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/dribble.png" height="40" width="40"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list2">
+                    <h4>Recent Posts</h4>
+                    <ul>
+                        <li>
+                            <img src="images/recent-post-item1.png" height="70" width="70">
+                            <h5>New Camera Set</h5>
+                            <p>posted by <span class="highlight">Admin</span></p>
+                        </li>
+                        <li>
+                            <img src="images/recent-post-item2.png" height="70" width="70">
+                            <h5>Special Camera Lenses</h5>
+                            <p>posted by <span class="highlight">Gljivec</span></p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list3">
+                    <h4>Contacts</h4>
+                    <div class="info1">
+                        <p>1000 Ljubljana</p>
+                        <p>Celovska cesta 135</p>
+                        <p>Country Slovenia</p>
+                    </div>
+                    <div class="info2">
+                        <p>Phone: (+386) 40 123 456</p>
+                        <p>Mobile: (+386) 40 654 123</p>
+                    </div>
+                    <div class="info3">
+                        <p>info@premiumcoding.com </p>
                     </div>
                 </li>
-                <li>
-                    <div class="list2">
-                        <h4>Recent Posts</h4>
-                        <ul>
-                            <li>
-                                <img src="images/recent-post-item1.png" height="70" width="70">
-                                <h5>New Camera Set</h5>
-                                <p>posted by <span class="highlight">Admin</span></p>
-                            </li>
-                            <li>
-                                <img src="images/recent-post-item2.png" height="70" width="70">
-                                <h5>Special Camera Lenses</h5>
-                                <p>posted by <span class="highlight">Gljivec</span></p>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="list3">
-                        <h4>Contacts</h4>
-                        <div class="info1">
-                            <p>1000 Ljubljana</p>
-                            <p>Celovska cesta 135</p>
-                            <p>Country Slovenia</p>
-                        </div>
-                        <div class="info2">
-                            <p>Phone: (+386) 40 123 456</p>
-                            <p>Mobile: (+386) 40 654 123</p>
-                        </div>
-                        <div class="info3">
-                            <p>info@premiumcoding.com </p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="list4">
-                        <h4>What People say</h4>
-                        <ul>
-                            <li>
-                                <div class="list-left">
-                                    <img src="images/people1.png" height="80" width="83">
-                                    <p>ANNA</p>
-                                </div>
-                                <div class="list-right">
-                                    <p>Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing elit. 
-                                    Integer dolor orci</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list-left">
-                                    <img src="images/people2.png" height="80" width="83">
-                                    <p>ERICA</p>
-                                </div>
-                                <div class="list-right">
-                                    <p>Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing elit. 
-                                    Integer dolor orci</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                <li class="list4">
+                    <h4>What People say</h4>
+                    <ul>
+                        <li>
+                            <div class="list4-left">
+                                <img src="images/people1.png" height="80" width="83">
+                                <p>ANNA</p>
+                            </div>
+                            <div class="list4-right">
+                                <p>Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit. 
+                                Integer dolor orci</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list4-left">
+                                <img src="images/people2.png" height="80" width="83">
+                                <p>ERICA</p>
+                            </div>
+                            <div class="list4-right">
+                                <p>Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit. 
+                                Integer dolor orci</p>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -383,17 +372,13 @@
         <!--bottombar-->
         <div class="bottombar">
             <div class="green-bar"></div>
-            <div class="bottombar-left">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">SITEMAP</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="bottombar-right">
-                <p>CameraStore @2013 by PremiumCoding | All Rights Reserved</p>
-            </div>
+            <ul class="bottombar-left">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">SITEMAP</a></li>    
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <p class="bottombar-right">CameraStore @2013 by PremiumCoding | All Rights Reserved</p>
         </div>
     </div> 
 </body>
