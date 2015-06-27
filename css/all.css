@@ -509,28 +509,27 @@ body {
   opacity: 0.4;
 }
 
+.recent-subtitle {
+  padding: 10px;
+  font-size: 20px;
+}
+
 .recent-introduction {
+  display: block;
   padding: 10px;
   border-bottom: 2px solid #e7e7e7;
-}
-.recent-introduction h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.recent-introduction p {
   font-size: 14px;
   line-height: 1.8;
   color: #808080;
 }
 
 .recent-view {
+  display: inline-block;
   padding: 10px;
-}
-.recent-view a {
   font-size: 16px;
   color: #9cb929;
 }
-.recent-view a:hover {
+.recent-view:hover {
   opacity: 0.4;
 }
 
@@ -599,28 +598,26 @@ body {
   opacity: 0.4;
 }
 
+.featured-subtitle {
+  padding: 10px;
+  font-size: 20px;
+}
+
 .featured-introduction {
   padding: 10px;
   border-bottom: 2px solid #e7e7e7;
-}
-.featured-introduction h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.featured-introduction p {
   font-size: 14px;
   line-height: 1.8;
   color: #808080;
 }
 
 .featured-view {
+  display: inline-block;
   padding: 10px;
-}
-.featured-view a {
   font-size: 16px;
   color: #9cb929;
 }
-.featured-view a:hover {
+.featured-view:hover {
   opacity: 0.4;
 }
 
